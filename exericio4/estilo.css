@@ -1,0 +1,22 @@
+#caixa-externa{
+    background-color: blue;
+    border: 12px solid purple;
+    padding: 5px;
+
+
+}
+
+.texto-branco{
+    color: white;
+    background-color: red;
+}
+
+
+p{
+    color: yellow;
+}
+
+
+
+
+

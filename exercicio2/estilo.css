@@ -1,0 +1,14 @@
+#container{
+    position: relative;
+    text-align: center;
+}
+
+#amarelo{
+    width: 150px;
+    height: 150px;
+}
+
+#vermelho{
+    width: 150px;
+    height: 150px;
+}
