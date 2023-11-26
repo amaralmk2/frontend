@@ -120,3 +120,35 @@ li {
     padding: 8px;
 }
 
+/* Media queries para tornar o layout responsivo */
+@media screen and (max-width: 1184px) {
+    .container-menu-noticias-destaque, .container-servicos-resultados {
+        width: 100%;
+        padding: 20px;
+    }
+
+    * {
+        font-size: 1.2rem;
+    }
+
+    main {
+        margin-top: .2;
+    }
+}
+
+@media screen and (max-width: 728px){
+    * {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-menu-noticias-destaque, .container-servicos-resultados {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    main {
+        margin-top: .625rem;
+    }
+}
