@@ -1,0 +1,154 @@
+/* Reset de estilos padrão para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para diferentes tamanhos de fonte em cabeçalhos e parágrafos */
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(36, 39, 43);
+}
+
+h2 {
+    color: rgb(91, 98, 107);
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para o cabeçalho com logo */
+.cabecalho-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #dfedfd;
+    padding: 1.875rem;
+}
+
+/* Estilos para a imagem no cabeçalho */
+header img {
+    width: 5.625rem;
+}
+
+/* Espaçamento entre o cabeçalho e o conteúdo principal */
+main {
+    margin-top: 1.875rem;
+}
+
+/* Grid container para seções principais */
+.container-menu-noticias-destaque{
+    display: grid;
+    grid-template-columns: 2fr 2.41fr 0.5fr;
+    gap: 1rem;
+    width: 1175px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+/* Estilos compartilhados para várias seções */
+.secao-menu, .secao-noticias, .secao-destaque, .secao-servicos, .secao-resultados, .rodape {
+    border: 2px solid rgba(0, 0, 0, 0.23);
+    padding: .5rem;
+}
+
+/* Estilos para cabeçalhos em seções */
+.secao-menu > header,
+.secao-noticias > header,
+.secao-destaque > header,
+.secao-servicos > header,
+.secao-resultados > header,
+.rodape > header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+    margin-bottom: .5rem;
+}
+
+/* Estilos para listas em seções */
+.secao-menu > ul,
+.secao-noticias > ul,
+.secao-destaque > ul {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+}
+
+/* Estilos para itens de lista */
+li {
+   list-style: none;
+   margin-bottom: .2rem;
+}
+
+/* Estilos específicos para a seção de destaque */
+.secao-destaque ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-destaque img {
+    width: 6.25rem;
+}
+
+/* Estilos para a container de serviços e resultados */
+.container-servicos-resultados {
+    display: grid;
+    grid-template-columns: 2fr 3.064fr;
+    gap: 1rem;
+    width: 1175px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+
+/* Estilos para o rodapé fixo */
+.rodape {
+    
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1175px;
+    background-color: #dfedfd;
+    padding: 8px;
+}
+
+/* Media queries para tornar o layout responsivo */
+@media screen and (max-width: 1184px) {
+    .container-menu-noticias-destaque, .container-servicos-resultados {
+        width: 100%;
+        padding: 20px;
+    }
+
+    * {
+        font-size: 1.2rem;
+    }
+
+    main {
+        margin-top: .2;
+    }
+}
+
+@media screen and (max-width: 728px){
+    * {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-menu-noticias-destaque, .container-servicos-resultados {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    main {
+        margin-top: .625rem;
+    }
+}
